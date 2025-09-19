@@ -1,8 +1,8 @@
-import random
+import random #random é um modulo útil em aplicações que requerem aleatoriedade
 
 print("Bem-vindo ao jogo: ADIVINHE O NÚMERO!")
 print("A regra é simples: Pensarei em um número e seu objetivo é advinha-lo.")
-numero = random.randint(1, 10)
+numero = random.randint(1, 10) #A função randint() aceita dois argumentos: o limite inferior e o limite superior do intervalo
 isGuessRigth = False
 while isGuessRigth != True:
     adivinha = input("Digite um número de 1 a 10: ")
