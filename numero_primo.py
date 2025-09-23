@@ -13,3 +13,9 @@ for n in range(1, 251):
 
 print("Numeros primos entre 1 e 250:") 
 print(numeros_primos)
+
+with open("resultado.txt", "w") as arquivo:
+    arquivo.write("Números primos entre 1 e 250:\n")
+    for primo in numeros_primos:
+        arquivo.write(str(primo) + "\n")
+print("Arquivos salvos com sucesso!")
