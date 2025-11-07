@@ -16,3 +16,11 @@ imc = peso*altura
 
 if imc < 18.5 :
     print("Abaixo do peso")
+elif imc < 25:
+    classificacao = "Peso normal"
+elif imc < 30:
+    classificacao = "Sobrepeso"
+else:
+    classificacao = "Obeso"
+print("Seu IMC é:", round(imc, 2))
+print("Classificação:", classificacao)
